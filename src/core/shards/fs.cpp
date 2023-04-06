@@ -93,6 +93,7 @@ struct Join {
 
   static SHTypesInfo inputTypes() { return CoreInfo::StringSeqType; }
   static SHTypesInfo outputTypes() { return CoreInfo::StringType; }
+  static SHOptionalString help() { return SHCCSTR("Returns a string with all the string elements in vector concatenated, and separated by \"/\""); }
 
   SHVar activate(SHContext *context, const SHVar &input) {
     _buffer.clear();

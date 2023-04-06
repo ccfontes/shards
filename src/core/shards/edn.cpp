@@ -52,6 +52,9 @@ struct Uglify {
 
   static SHTypesInfo inputTypes() { return CoreInfo::StringType; }
   static SHTypesInfo outputTypes() { return CoreInfo::StringType; }
+  static SHOptionalString help() { return SHCCSTR("Removes formating whitespace from an EDN string. Resulting EDN string is a single line of EDN tokens and sexprs separated by the space character, and containing one trailing space character."); }
+  static SHOptionalString inputHelp() { return SHCCSTR("EDN string"); }
+  static SHOptionalString outputHelp() { return SHCCSTR("EDN string"); }
 
   void rewrite(token::Token &token, SHVar &v) {
     switch (v.valueType) {
