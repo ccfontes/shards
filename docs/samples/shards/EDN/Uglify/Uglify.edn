@@ -2,4 +2,4 @@
 (FS.Read)
 (EDN.Uglify)
 (Log)
-(Assert.Is "[\"shiver\" \"me\" \"timbers\"] (FS.Join) (Assert.Is \"shiver/me/timbers\")")
+(Assert.Is "[\"shiver\" \"me\" \"timbers\"] (FS.Join) (Assert.Is \"shiver/me/timbers\") ")
