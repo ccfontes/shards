@@ -1,0 +1,5 @@
+"shards/FS/Join/Join.edn"
+(FS.Read)
+(EDN.Uglify)
+(Log)
+(Assert.Is "[\"shiver\" \"me\" \"timbers\"] (FS.Join) (Assert.Is \"shiver/me/timbers\") ")

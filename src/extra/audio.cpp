@@ -837,6 +837,7 @@ struct WriteFile {
 
   static SHTypesInfo inputTypes() { return CoreInfo::AudioType; }
   static SHTypesInfo outputTypes() { return CoreInfo::AudioType; }
+  static SHOptionalString inputHelp() { return SHCCSTR("Path to audio file"); }
 
   static const SHTable *properties() { return &experimental.payload.tableValue; }
 
