@@ -1,0 +1,3 @@
+["timbers"]
+(FS.Join) (Log)
+(Assert.Is "timbers")

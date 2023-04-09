@@ -93,7 +93,7 @@ struct Join {
 
   static SHTypesInfo inputTypes() { return CoreInfo::StringSeqType; }
   static SHTypesInfo outputTypes() { return CoreInfo::StringType; }
-  static SHOptionalString help() { return SHCCSTR("Returns a string with all the string elements in vector concatenated, and separated by \"/\""); }
+  static SHOptionalString help() { return SHCCSTR("Concatenates all the elements of a string sequence, using \"/\" as separator between each element, so that the final string can be used as a filesystem path. When the input string sequence has only one element, the final string becomes that element."); }
 
   SHVar activate(SHContext *context, const SHVar &input) {
     _buffer.clear();

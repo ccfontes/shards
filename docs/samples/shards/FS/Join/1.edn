@@ -1,3 +1,3 @@
 ["shiver" "me" "timbers"]
-(FS.Join)
+(FS.Join) (Log)
 (Assert.Is "shiver/me/timbers")
